@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Ficha de inscrição</h1>
+    <form action="cadastrar.php" method="POST">
+        <P>
+            <label for="timeID">Nome do time: </label> 
+            <input name="time" id="timeID" required>
+        </p>
+        <p>
+            <label for="responsavel">Nome do Responsavel</label>
+            <input name="responsavel" id="responsavel" maxlength="15">
+        </p>
+        <p>
+            <label for="email_responsavel">Email do Responsavel</label>
+            <input type="email" id="email_responsavel"
+            name="email_responsavel">
+        </p>
+        <p>
+            <label>Cidade de origem:</label>
+            <select name="cidade">
+                <option value="sbo">Santa Barbara</option>
+                <option value="ame">Americana</option>
+                <option value="sum">Sumaré</option>
+            </select>
+        </p>
+        <p>
+            <label>Campeonato:</label>
+            <input type="radio" name="Campeonato" value="Estadual">Estadual
+            <input type="radio" name="Campeonato" value="Regional">Regional
+        </p>
+        <p>
+            <label>Categoria</label>
+            <input type="checkbox"  value="SUB20">SUB20
+            <input type="checkbox" value="SUB17">SUB17
+        </p>
+        <p>
+            <label for="consideracoes">Considerações</label>
+            <br>
+            <textarea name="considerações" id="consideracoes"></textarea>
+        </p>
+        <p>
+            <label>Escudo:</label>
+            <input type="file">
+        </p>
+
+<button type="submit">Enviar</button>
+<button type="reset">Limpar</button>
+
+    </form>
+
+
+
+
+
+    
+</body>
+</html>
